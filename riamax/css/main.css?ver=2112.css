@@ -1,0 +1,166 @@
+html{color:#000;}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote{margin:0; padding:0;}
+fieldset, img{border:0;}
+address, caption, cite, code, dfn, th, var{font-style:normal; font-weight:normal;}
+li{list-style:none;}
+caption, th{text-align:left;}
+q:before, q:after{content:'';}
+abbr, acronym {border:0; font-variant:normal;} /* to preserve line-height and selector appearance */ /* to preserve line-height and selector appearance */
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input, textarea, select{font-family:inherit; font-size:inherit; font-weight:inherit;} /*to enable resizing for IE*/
+input, textarea, select{*font-size:100%;} /*because legend doesn't inherit in IE */
+legend{color:#000;}
+img {border:0;}
+
+@font-face {font-family:'Material Icons';font-style:normal;font-weight:400;src:url(../fonts/material-icons.woff2);/* For IE6-8 */
+  src:local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/material-icons.woff2) format('woff2'),;}
+.material-icons {font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;/* Preferred icon size */
+  display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;/* Support for all WebKit browsers. */
+  -webkit-font-smoothing:antialiased;/* Support for Safari and Chrome. */
+  text-rendering:optimizeLegibility;/* Support for Firefox. */
+  -moz-osx-font-smoothing:grayscale;/* Support for IE. */
+  font-feature-settings:'liga';}
+ 
+ @font-face{font-family:'Montserrat';src:url('../fonts/Montserrat-Regular.ttf') format('truetype');
+ font-weight:normal;font-style:normal;}
+ @font-face{font-family:'Montserrat';src:url('../fonts/Montserrat-Bold.ttf') format('truetype');
+ font-weight:bold;font-style:normal;} 
+ @font-face{font-family:'Montserrat';src:url('../fonts/Montserrat-Italic.ttf') format('truetype');
+ font-weight:normal;font-style:italic;}
+  @font-face{font-family:'CirceRounded';src:url('../fonts/CirceRounded.otf')}
+ 
+body{font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:1.5em;color:#646464;text-align:center;}
+
+#fon {display:inline-block;width:100%;background:#335173;}
+#topp {position:relative;width:100%;max-width:1200px;display:inline-block;padding:0;
+margin:0;border:0;text-align:center;
+font-size:13px;font-family:'Montserrat',Arial,sans-serif;line-height:1.55;
+font-weight:400;letter-spacing:1.5px;}
+
+
+
+#tlogo {float:left;width:240px;margin:20px 0 0 0px;text-align:left;padding:0 0 0 2%;}
+.logo {width:240px;height:50px;margin:0;padding:0;background:url(../images/logo2.png);}
+
+
+
+#menu-full {display:inline-block;width:auto;padding:30px 0 0px 0;height:auto;float:right;}
+
+#menu-full ul {display:flex;width:100%;}
+#menu-full ul a {color:#fff;text-decoration:none;}
+#menu-full ul a:hover {color:#aaa;}
+#menu-full ul li {padding:0 10px;font-weight:700;
+font-family:'CirceRounded',sans-serif;font-size:17px;letter-spacing:1.2px;line-height:1.25;}
+
+
+
+#menu {display:none;min-width:100%;padding:0;height:auto;}
+
+.menu__icon {position:absolute;top:30px;right:5%;width:35px;height:25px;cursor:pointer;}
+.menu__icon span {display:block;position:absolute;height:6px;width:100%;background:#ffffff;
+border-radius:9px;opacity:1;left:0;transform:rotate(0deg);transition:.25s ease-in-out;}
+.menu__icon span:nth-child(1) {top:0px;}
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {top:10px;}
+.menu__icon span:nth-child(4) {top:20px;}
+#menu.menu_state_open .menu__icon span:nth-child(1) {top:14px;width:0%;left:50%;}
+#menu.menu_state_open .menu__icon span:nth-child(2) {transform:rotate(45deg);}
+#menu.menu_state_open  .menu__icon span:nth-child(3) {transform:rotate(-45deg);}
+#menu.menu_state_open  .menu__icon span:nth-child(4) {top:14px;width:0%;left:50%;}
+
+.menu__links {display:none;margin:10px 0 0 0;overflow:auto;background-color:#393c47;}
+#menu.menu_state_open .menu__links {display:block;z-index:1000;}
+.menu__links ul {margin:0;}
+.menu__links ul li, ul.menu_two li {display:inline-block;position:relative;
+margin:0;padding:20px 0;border-bottom:1px solid #111;width:50%;
+font-family:'CirceRounded',sans-serif;font-size:17px;letter-spacing:1.2px;line-height:1.25;}
+ul.menu_two li {border:0;}
+
+.menu__links ul a {font-size:15px;color:#fff;text-decoration:none;}
+.menu__links ul a:hover {color:#474747;text-decoration:underline;}
+
+
+.menu_two {display:none;overflow:auto;}
+.menu_two_icon {display:inline-block;vertical-align:middle;}
+
+.menu_hidden {display:none;}
+
+
+	
+
+#topimg {display:inline-block;max-width:1200px;padding:20px 0 0 0;margin:0;}
+#topimg img {width:100%;height:100%;}
+
+#textgrey {height:auto;min-height:400px;background-color:#F3F5F9;padding:20px 0 40px 0;text-align:center;}
+#textgrey img {max-width:100%;min-width:50px;}
+#iii-text-fon {max-width:1200px;display:inline-block;text-align:justify;}
+.about-text-text {padding:0px 15px;color:#000;letter-spacing:1.1px;
+font-size:17px;font-family:'Montserrat',Arial,sans-serif;line-height:1.5;font-weight:normal;}
+.text-zag {clear:both;display:inline-block;width:100%;}
+.text-left {display:inline-block;float:left;margin:0 10px;vertical-align:bottom;}
+.text-right {display:inline-block;float:right;margin:0 10px;}
+.text-main {clear:both;display:inline-block;margin:0 10px;}
+
+
+.familiya {height:250px;margin:120px 0 0 50px;}
+
+
+
+#darkgrey {height:auto;width:100%;background-color:#393c47;padding:30px 0 20px 0;margin:0;}
+.niz {color:#989aa1;font-size:18px;font-weight:normal;font-family:Montserrat;line-height:1.8;}
+
+
+.scrollUp {position:fixed;top:auto;bottom:10px;right:10px;left:auto;
+width:47px;height:35px;border-radius:50px;background-color:transparent;z-index:9999;cursor:pointer;
+text-align:center;padding:12px 0 0 0;opacity:0.8;border:#585d6f 1px solid;}
+.scrollUp:before {content:"\e316";font-family:"Material Icons";color:#585d6f;font-size:36px;
+font-weight:normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content {clear:both;}
+#clear, .clear {clear:both;}
+a {color:#3399FF;}
+a:hover {color:#FC2F58;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 800px)
+{
+#menu-full {display:none;}
+#menu {display:inline-block;}
+#topimg {padding:0px 0 0 0;}
+.familiya {height:auto;margin:10px;}
+
+}
+
+@media screen and (max-width:480px)
+{
+
+}

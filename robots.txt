@@ -1,0 +1,13 @@
+User-agent: *
+
+Host: https://kalinovskiy.kiev.ua
+Sitemap: https://kalinovskiy.kiev.ua/sitemap.xml
+
+Disallow: /assets/cache/
+Disallow: /assets/docs/
+Disallow: /assets/export/
+Disallow: /assets/import/
+Disallow: /assets/modules/
+Disallow: /assets/plugins/
+Disallow: /install/
+Disallow: /manager/
